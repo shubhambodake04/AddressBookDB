@@ -36,3 +36,8 @@ select count(City) from contacts where City = 'Satara'
 select count(State) from contacts where State = 'Maharastra'
 
 select * from contacts order by Firstname
+
+ALTER TABLE contacts ADD type varchar(150),name varchar(100)
+
+
+	
