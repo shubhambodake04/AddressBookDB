@@ -38,6 +38,16 @@ select count(State) from contacts where State = 'Maharastra'
 select * from contacts order by Firstname
 
 ALTER TABLE contacts ADD type varchar(150),name varchar(100)
+ALTER TABLE contacts
+DROP COLUMN name;
 
+update contacts set type = 'Friend' where Firstname='Shubham'
+update contacts set type = 'Family' where Firstname in ('Amol','abhi')
 
-	
+select * from contacts
+
+insert into contacts values
+('Raju','Patil','JK road','Vellore','Chennai','452369','4422558899','raju124@gmail.com','Friend')
+
+SELECT  COUNT(type)
+FROM contacts
